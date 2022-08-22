@@ -1,4 +1,4 @@
-# test with : hello world docker action
+# test with : hello world docker action.
 
 on:
   push:
