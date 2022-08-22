@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Step Hola Mundo
         id: hello
-        uses: sergioanino/hello-world-docker-action@v5
+        uses: sergioanino/hello-world-docker-action@v6
         with:
           who-to-greet: "sergioanino"
       - name: Usar el output
