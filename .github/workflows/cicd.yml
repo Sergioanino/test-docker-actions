@@ -1,5 +1,5 @@
 # test with : hello world docker action.
-# test v5
+# test v9
 
 on:
   push:
@@ -9,10 +9,12 @@ jobs:
     name: Un job para saludar
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Step Hola Mundo
         id: hello
-        uses: sergioanino/hello-world-docker-action@v6
+        uses: sergioanino/hello-world-docker-action@v9
         with:
-          who-to-greet: "sergioanino"
+          who-to-greet: "Nino"
       - name: Usar el output
         run: echo "La fecha fue ${{ steps.hello.outputs.time }}"
