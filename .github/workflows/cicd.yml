@@ -15,6 +15,6 @@ jobs:
         id: hello
         uses: sergioanino/hello-world-docker-action@v4
         with:
-          who-to-greet: "Nino"
+          who-to-greet: "sergioanino"
       - name: Usar el output
         run: echo "La fecha fue ${{ steps.hello.outputs.time }}"
