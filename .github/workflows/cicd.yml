@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Step Hola Mundo
         id: hello
-        uses: sergioanino/hello-world-docker-action@v10
+        uses: sergioanino/hello-world-docker-action@v4
         with:
           who-to-greet: "Nino"
       - name: Usar el output
