@@ -1,5 +1,5 @@
 # test with : hello world docker action.
-# test v10
+# test v4
 
 on:
   push:
@@ -9,8 +9,8 @@ jobs:
     name: Un job para saludar
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      # - name: Checkout
+      #   uses: actions/checkout@v3
       - name: Step Hola Mundo
         id: hello
         uses: sergioanino/hello-world-docker-action@v4
